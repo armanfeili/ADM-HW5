@@ -11,22 +11,22 @@
 
 2) Eduardo Baldo 
     - Matricola: 2111915
-    - Registered Email: 
-         - eduardobaldo10@gmail.com
+    - Registered Email:
+        - eduardobaldo10@gmail.com
     - GitHub ID: @edduardobaldo
     - GitHub URL: https://github.com/
 
 3) Antonella Mei 
     - Matricola: 1887894
-    - Registered Email: 
-         - mei.1887894@studenti.uniroma1.it
+    - Registered Email:
+        - mei.1887894@studenti.uniroma1.it
     - GitHub ID: @Antomei23
     - GitHub URL: https://github.com/Antomei23
 
 4) Sudenaz Baysag
     - Matricola: 2117246
-    - Registered Email: 
-         - subaysag@gmail.com
+    - Registered Email:
+        - subaysag@gmail.com
     - GitHub ID: @sdnzthewitch
     - GitHub URL: https://github.com/sdnzthewitch
 
