@@ -1,6 +1,7 @@
  # 5. Algorithmic Question
- 
-def max_global_score(N, M, S, optimal_skills, athletes):
+
+    # 
+   def max_global_score(N, M, S, optimal_skills, athletes):
     # Create a 3D table to store the maximum scores
     dp = [[[0] * (S + 1) for _ in range(M + 1)] for _ in range(N + 1)]
 
