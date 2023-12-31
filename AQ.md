@@ -34,5 +34,8 @@ PART A
     # Call the function and print the result
     result = max_global_score(N, M, S, optimal_skills, athletes)
     print(result)
-#1.
+
+1. This code allows Team Rome to select the best athletes for a national sports championship. Using dynamic programming, the algorithm chooses ten athletes from the given candidates based on an optimal set of skills defined by the coaches. The goal is to maximize the team's total score, considering the proficiency of each athlete in the specified skills.
+
+2.
 
