@@ -34,3 +34,5 @@
     # Call the function and print the result
     result = max_global_score(N, M, S, optimal_skills, athletes)
     print(result)
+#1.
+
