@@ -1,5 +1,5 @@
  # 5. Algorithmic Question
-
+PART A
     
     def max_global_score(N, M, S, optimal_skills, athletes):
     # Create a 3D table to store the maximum scores
