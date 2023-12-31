@@ -21,16 +21,16 @@
 
     return dp[N][M][S]
 
-# Input parsing
-N, M, S = map(int, input().split())
-optimal_skills = input().split()
+    # Input parsing
+    N, M, S = map(int, input().split())
+    optimal_skills = input().split()
 
-athletes = {}
-for _ in range(N):
-    athlete_id = int(input())
-    skills = [input().split() for _ in range(S)]
-    athletes[athlete_id] = skills
+    athletes = {}
+    for _ in range(N):
+     athlete_id = int(input())
+     skills = [input().split() for _ in range(S)]
+     athletes[athlete_id] = skills
 
-# Call the function and print the result
-result = max_global_score(N, M, S, optimal_skills, athletes)
-print(result)
+    # Call the function and print the result
+    result = max_global_score(N, M, S, optimal_skills, athletes)
+    print(result)
