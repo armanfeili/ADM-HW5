@@ -37,5 +37,13 @@ PART A
 
 1. This code allows Team Rome to select the best athletes for a national sports championship. Using dynamic programming, the algorithm chooses ten athletes from the given candidates based on an optimal set of skills defined by the coaches. The goal is to maximize the team's total score, considering the proficiency of each athlete in the specified skills.
 
-2.
+2.My solutions time complexity function is O(NMS):
+N represents the number of athletes.
+M represents the number of roles or positions to be filled in the team.
+S represents the number of skills associated with each athlete.   Because we have loop with tree ingredients. Also ı create a 3d sized table.
 
+3. Asked to Chat-GPT for Big O Notation. It says same. Time complexity is O(N*M*S).
+
+4. 
+
+5.If S=1 ,it means every athlete associated with only can have one skill. We only have 0 and 1 for innermost loop. Time complexity becomes N*M because S is constant. New time complexity will be O(N*M).
