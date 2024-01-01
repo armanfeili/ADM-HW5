@@ -47,3 +47,21 @@ S represents the number of skills associated with each athlete.   Because we hav
 4. 
 
 5.If S=1 ,it means every athlete associated with only can have one skill. We only have 0 and 1 for innermost loop. Time complexity becomes N*M because S is constant. New time complexity will be O(N*M).
+
+PART B
+
+1.NP-Completeness Proof:
+
+The problem closely resembles the Set Cover problem, where the goal is to find the smallest subset of sets covering a universe. We can establish NP-completeness by mapping individuals in our problem to elements in Set Cover and skills to subsets. If solving our problem is equivalent to solving Set Cover, then our problem is NP-complete due to the well-known NP-completeness of Set Cover.
+
+This reduction confirms the NP-completeness of our problem, aligning it with a class of computationally challenging problems for which no efficient solution algorithm is currently known.
+
+2. So, for a quick and practical way to solve our problem, we can use a kind of shortcut called a heuristic. Specifically, let's focus on the Minimum Spanning Tree (MST) and use a simple strategy:
+
+Sorting Edges: First, let's put the edges of our team collaboration graph in order, starting from the easiest to the toughest (or the lightest to the heaviest, if you will).
+
+Building MST: Now, let's construct the Minimum Spanning Tree by picking edges one by one from our sorted list. We keep going until we've covered all the skills we need in our team.
+
+This approach won't guarantee the absolute best solution, but it's like a good guess – a practical approximation.
+
+3.
