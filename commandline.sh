@@ -9,8 +9,24 @@ grep -o '<edge.*source="[^"]*"' Citation_Graph.graphml | sed 's/.*source="\([^"]
 
 echo "#-----------------  Q-2  --------------------:"
 
+# Extract edges and source nodes, count occurrences of each node
+node_degrees=$(grep -o '<edge.*source="[^"]*"' Citation_Graph.graphml | sed 's/.*source="\([^"]*\)"/\1/' | sort | uniq -c | awk '{print $1}')
+
+# Calculate total degrees
+total_degrees=$(echo "$node_degrees" | awk '{sum+=$1} END {print sum}')
+
+# Count the number of nodes
+total_nodes=$(echo "$node_degrees" | wc -l)
+
+# Calculate average degree
+average_degree=$(echo "scale=2; $total_degrees / $total_nodes" | bc)
+
+echo "Total degrees: $total_degrees"
+echo "Total nodes: $total_nodes"
+echo "Average degree: $average_degree"
+
 echo "Nodes with Low Degrees: "
-grep -o '<edge.*source="[^"]*"' Citation_Graph.graphml | sed 's/.*source="\([^"]*\)"/\1/' | sort | uniq -c | awk '{if ($1 <= 5) print $2, $1}' | sort -k2 -n
+grep -o '<edge.*source="[^"]*"' Citation_Graph.graphml | sed 's/.*source="\([^"]*\)"/\1/' | sort | uniq -c | awk '{if ($1 <= 5) print $2, $1}' | sort -k2 -rn
 
 
 echo "#-----------------  Q-3  --------------------:"
